@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-width: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    background:url("../img/img1.jpg");
+    
+}
+
+section{
+    width: 90%;
+    margin: 100px auto;
+    border: 2px solid #fff;
+    background:rgba(255, 255, 255, 0)000 ;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+}
+.left,
+.right{
+    width: 50%;
+    text-align: center;
+    border: 1px  solid yellow;
+    padding: 15px;
+}
+.colorCambiado {
+    border: 1px  solid blue;
+}
+
+
+button {
+    padding: 10px 30px;
+    background: rgb(64, 0, 255);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    border-radius: 0 10px 0 10px;
+    border: 1px solid #fff;
+    transition: .4s;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 0 8px 0 #0ff;
+
+}
+
+button:hover{
+    border-radius: 20px 0 20px 0;
+    background: aqua;
+    color: #000000;
+}
+
+.containerf{
+    width: 100%;
+    min-width: 100vw;
+    background: url(../img/fondo2.png);
+    background-size: cover;
+    background-position: 50% 25%; 
+}
+
+#figura{
+    width: 200px;
+    height: 200px;
+    background: #000000;
+    border: 2px solid rgb(245, 2, 2);
+    margin: 40px auto;
+    transition: all .4s ease-in-out;
+}
+
+#figura.circulo /*id clase de un mismo elemento*/{
+    border-radius: 50% ;
+    background: #6907e9;
+    transform: rotate(360deg);
+    border: solid #6907e9 ;
+}
+
+#figura.moveTop{
+    transform: translateY(-50px);
+}
+
+#figura.rectangulo{
+    width: 600px;
+    
+}
+
+#figura.rombo{
+    transform: rotate(45deg);
+}
+#figura.imagen{
+    background: url(../img/img2.jpg);
+    background-size: cover;
+}
+/*como cambiar fuente con javascript*/
+
+#figura.imgif{
+    background: url(../img/img3.gif);
+    background-size: cover;
+}
+
+
+#figura.huevo{
+    width: 126px;
+    height: 180px;
+    background-color: #6907e9;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transition: .4s;
+}
+
+#figura.pacMan{
+    width:0;
+     height:0; 
+    border-right: 50px solid transparent; 
+    border-top: 50px solid #6907e9; 
+    border-left: 50px solid #6907e9; 
+    border-bottom: 50px solid #6907e9; 
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%;
+     border-radius: 100%; 
+     background: transparent;
+}
+
+#figura.luna {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: transparent;
+    -moz-box-shadow: 30px 10px 0 #6907e9;
+    -webkit-box-shadow: 30px 10px 0 #6907e9;
+    box-shadow: 30px 10px 0 #6907e9;
+    background: transparent;
+}
+
+#figura.triangulo{
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-right: 100px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 150px solid #6907e9;
+}
+
+#figura.hoja{
+    width: 250px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background: #6907e9;
+    border: 3px solid #6907e9;
+}
+
+.panel-superior {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: #6907e9;
+    text-align: center;
+    padding: 20px;
+    transition: top 1s;
+}
+
+.panel-superior.active {
+    top: 0;
+}
+
+.panel-superior h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-superior ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-superior li {
+    margin-bottom: 10px;
+}
+
+.panel-superior a {
+    display: block;
+    background: #000000;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-superior a:hover {
+    transform: scale(1.1);
+}
+
+.close {
+    cursor: pointer;
+}
+
+.panel-lateral {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background: #6907e9 ;
+    text-align: center;
+    padding: 20px;
+    transition: left 1s;
+}
+
+.panel-lateral.active {
+    left: 0;
+}
+
+.panel-lateral h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-lateral li {
+    margin-bottom: 10px;
+}
+
+.panel-lateral a {
+    display: block;
+    background: #000000;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-lateral a:hover {
+    transform: scale(1.1);
+}
+
+/*pendiente de funcionar PANEL LATERAL*/
+
+#figura.trapecio {
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid #6907e9;
+    background: transparent;
+}
+
+#figura.moveLeft{
+    transform: translateX(-50px);
+}
+
+#figura.moveBottom{
+    transform: translateY(50px);
+}
+
+#figura.moveRight{
+    transform: translateX(50px);
+}
+.cambiarColor {
+    color: red; /* o cualquier otro color */
+  }
+  .panel-inferior {
+    position: fixed;
+    bottom: -100%; /* Cambié 'top' a 'bottom' y el valor a -100% */
+    left: 0;
+    width: 100%;
+    background: #6907e9;
+    text-align: center;
+    padding: 20px;
+    transition: bottom 1s; /* Cambié 'top' a 'bottom' en la propiedad de transición */
+}
+
+.panel-inferior.active {
+    bottom: 0; /* Cambié 'top' a 'bottom' y el valor a 0 */
+}
+
+.panel-inferior h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-inferior ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-inferior li {
+    margin-bottom: 10px;
+}
+
+.panel-inferior a {
+    display: block;
+    background: #000000;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-inferior a:hover {
+    transform: scale(1.1);
+}
+
+body.cambio {
+    background-image: url(../img/img4.jpg); /* Ruta de tu segunda imagen */
+}
+.colorCambiado1 {
+    background-image: url(../img/img7.gif);
+}
+.colorCambiado2{
+    background-image: url(../img/img6.gif);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Figura</title>
+</head>
+<body>
+    <div class="panel-lateral">
+        <a href="#" onclick="cerrarPanelLateral()" class="close">X</a>
+        <h2>Panel Lateral</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <div class="panel-superior">
+        <a href="#" onclick="cerrarPanelSuperior()" class="close">X</a>
+        <h2>Panel Superior</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="panel-inferior">
+        <a href="#" onclick="cerrarPanelinferior()" class="close">X</a>
+        <h2>Panel Inferior</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="background">
+        <a href="#" onclick="cambiarfondo()" class="close"></a>
+    </div>
+    
+<section>
+    <div  class="left" id="leftElement">
+        <h2>Interacciones</h2>
+        <button onclick="circulo()" id="btn">CIRCULO</button>
+        <button onclick="rectangulo()" id="btn">RECTANGULO</button>
+        <button onclick="rombo()" id="btn">ROMBO</button>
+        <button onclick="imagen()" id="btn">IMAGEN</button>
+        <button onclick="imgif()" id="btn">GIF</button>
+        <button onclick="triangulo()" id="btn">TRIANGULO</button>
+        <button onclick="hoja()" id="btn">HOJA</button>
+        <button onclick="pacMan()" id="btn">PAC MAN</button>
+        <button onclick="luna()" id="btn">LUNA</button>
+        <button onclick="huevo()" id="btn">HUEVO</button>
+        <button onclick="trapecio()" id="btn">TRAPECIO</button>
+        <button onclick="moveTop()" id="btn">MOVE TOP</button>
+        <button onclick="moveLeft()" id="btn">MOVE LEFT</button>
+        <button onclick="moveBottom()" id="btn">MOVE BOTTOM</button>
+        <button onclick="moveRight()" id="btn">MOVE RIGHT</button>
+        <button onclick="mostrarPanelSuperior()" id="btn">PANEL SUPERIOR</button>
+        <button onclick="mostrarPanelLateral()" id="btn">PANEL LATERAL</button>
+        <button onclick="cambiarColor()">Cambiar Color</button>
+        <button id="cambiarBtn">Cambiar Fondo</button>
+        <button onclick="propuesta()" id="btn">PROPUESTA</button>
+       
+    </div>
+    <div class="right" id="rightElement">
+        <h2>Figura</h2>
+        <div id="figura"></div>
+    </div>
+
+</section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
