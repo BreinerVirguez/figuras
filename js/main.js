@@ -1,4 +1,4 @@
-let figura = document.getElementById("figura");
+var figura = document.getElementById("figura");
 let button = document.getElementById("btn");
 var titulo = document.querySelector(".fig");
 
