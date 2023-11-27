@@ -1,6 +1,6 @@
 let figura = document.getElementById("figura");
 let button = document.getElementById("btn");
-
+var titulo = document.querySelector(".fig");
 
 function circulo(){
     figura.classList.toggle("circulo");
