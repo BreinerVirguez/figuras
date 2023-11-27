@@ -4,58 +4,58 @@ var titulo = document.querySelector(".fig");
 
 function circulo(){
     figura.classList.toggle("circulo");
-    titulo.innerText.toggle = "circulo";
+    titulo.innerText = "circulo";
 }
 
 function moveTop(){
     figura.classList.toggle("moveTop");
-    titulo.innerText.toggle = "Move Top";
+    titulo.innerText = "Move Top";
 }
 
 
 function rectangulo(){
     figura.classList.toggle("rectangulo");
-   titulo.innerText.toggle = "rectangulo";
+   titulo.innerText = "rectangulo";
 }
 
 function rombo(){
     figura.classList.toggle("rombo");
-    titulo.innerText.toggle = "rombo";
+    titulo.innerText = "rombo";
 }
 
 function imagen(){
     figura.classList.toggle("imagen");
-   titulo.innerText.toggle = "imagen";
+   titulo.innerText = "imagen";
 }
 
 function imgif(){
     figura.classList.toggle("imgif");
-   titulo.innerText.toggle = "gif";
+   titulo.innerText= "gif";
 }
 
 function triangulo(){
     figura.classList.toggle("triangulo");
-   titulo.innerText.toggle = "triangulo";
+   titulo.innerText= "triangulo";
 }
 
 function huevo(){
     figura.classList.toggle("huevo");
-   titulo.innerText.toggle = "huevo";
+   titulo.innerText= "huevo";
 }
 
 function pacMan(){
     figura.classList.toggle("pacMan");
-   titulo.innerText.toggle = "pacMan";
+   titulo.innerText= "pacMan";
 }
 
 function luna(){
     figura.classList.toggle("luna");
-   titulo.innerText.toggle = "luna";
+   titulo.innerText= "luna";
 }
 
 function hoja(){
     figura.classList.toggle("hoja");
-   titulo.innerText.toggle = "hoja";
+   titulo.innerText= "hoja";
 }
 
 function mostrarPanelLateral() {
@@ -70,22 +70,22 @@ function cerrarPanelLateral() {
 
 function trapecio(){
     figura.classList.toggle("trapecio");
-   titulo.innerText.toggle = "trapecio";
+   titulo.innerText = "trapecio";
 }
 
 function moveLeft(){
     figura.classList.toggle("moveLeft");
- titulo.innerText.toggle = "Move Left";
+ titulo.innerText= "Move Left";
 }
 
 function moveBottom(){
     figura.classList.toggle("moveBottom");
- titulo.innerText.toggle = "Move Bottom";
+ titulo.innerText= "Move Bottom";
 }
 
 function moveRight(){
     figura.classList.toggle("moveRight");
- titulo.innerText.toggle = "Move Right";
+ titulo.innerText = "Move Right";
 }
 
 function mostrarPanelSuperior() {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var cambiarBtn = document.getElementById('cambiarBtn');
     cambiarBtn.addEventListener('click', function () {
         document.body.classList.toggle('cambio');
-         titulo.innerText.toggle = "Cambiar Fondo";
+         titulo.innerText = "Cambiar Fondo";
     });
 });
 function cambiarColor() {
@@ -110,7 +110,7 @@ function cambiarColor() {
 
     leftElement.classList.toggle('colorCambiado');
     rightElement.classList.toggle('colorCambiado');
-     titulo.innerText.toggle = "Cambiar Color";
+     titulo.innerText = "Cambiar Color";
 }
 function propuesta() {
     var leftElement = document.getElementById('leftElement');
@@ -118,6 +118,6 @@ function propuesta() {
 
     leftElement.classList.toggle('colorCambiado1');
     rightElement.classList.toggle('colorCambiado2');
-     titulo.innerText.toggle = "Propuesta";
+     titulo.innerText= "Propuesta";
 }
 
